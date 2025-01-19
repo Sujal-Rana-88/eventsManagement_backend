@@ -22,7 +22,7 @@ const limiter = rateLimit({
 app.use(limiter);
 app.use(bodyParser.json());
 app.use(cors({
-  origin: 'https://eventssmanagement.netlify.app/',
+  origin: 'https://eventssmanagement.netlify.app',
   credentials: true
 }));
 
