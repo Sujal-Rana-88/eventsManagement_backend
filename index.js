@@ -23,7 +23,7 @@ app.use(limiter);
 app.use(bodyParser.json());
 // app.use(cors());
 app.use(cors({
-  origin: 'http://localhost:3000',
+  origin: 'https://eventssmanagement.netlify.app',
   credentials: true
 }));
 // API route to create a new user
