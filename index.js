@@ -21,8 +21,11 @@ const limiter = rateLimit({
 // Apply rate limiter to all requests
 app.use(limiter);
 app.use(bodyParser.json());
-app.use(cors());
-
+// app.use(cors());
+app.use(cors({
+  origin: 'http://localhost:3000',
+  credentials: true
+}));
 // API route to create a new user
 app.use("/", UserRoutes);
 app.use("/", EventsRoutes);
